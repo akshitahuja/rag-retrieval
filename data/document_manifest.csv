@@ -1,0 +1,16 @@
+document_id,title,category,last_updated,filename,source_type
+IT-KB-001,Corporate VPN Setup and Connection Troubleshooting,VPN and Remote Access,2026-11-23,documents/IT-KB-001.md,fictional_sample
+IT-KB-002,Troubleshooting Outlook Not Opening or Synchronising,Email and Collaboration,2026-11-23,documents/IT-KB-002.md,fictional_sample
+IT-KB-003,Corporate Wi-Fi Connection Troubleshooting,Network and Connectivity,2026-11-23,documents/IT-KB-003.md,fictional_sample
+IT-KB-004,Corporate Account Password Reset,Identity and Access,2026-11-23,documents/IT-KB-004.md,fictional_sample
+IT-KB-005,Requesting Installation of Approved Software,Software and Applications,2026-11-23,documents/IT-KB-005.md,fictional_sample
+IT-KB-006,Basic Laptop Performance Troubleshooting,Hardware and Performance,2026-11-23,documents/IT-KB-006.md,fictional_sample
+IT-KB-007,Printer Connectivity and Printing Troubleshooting,Hardware and Peripherals,2026-11-23,documents/IT-KB-007.md,fictional_sample
+IT-KB-008,Setting Up Multi-Factor Authentication,Identity and Access,2026-11-23,documents/IT-KB-008.md,fictional_sample
+IT-KB-009,Remote Desktop and VDI Connection Steps,VPN and Remote Access,2026-11-23,documents/IT-KB-009.md,fictional_sample
+IT-KB-010,How to Raise an IT Support Ticket,IT Service Management,2026-11-23,documents/IT-KB-010.md,fictional_sample
+IT-KB-011,Troubleshooting Teams Audio and Camera,Email and Collaboration,2026-11-23,documents/IT-KB-011.md,fictional_sample
+IT-KB-012,Troubleshooting Access to a Shared Network Folder,Identity and Access,2026-11-23,documents/IT-KB-012.md,fictional_sample
+IT-KB-013,Recognising and Reporting Suspicious Emails,Security Awareness,2026-11-23,documents/IT-KB-013.md,fictional_sample
+IT-KB-014,Clearing Browser Cache for a Web Application Issue,Software and Applications,2026-11-23,documents/IT-KB-014.md,fictional_sample
+IT-KB-015,Safe Restart and Update of a Company Laptop,Hardware and Performance,2026-11-23,documents/IT-KB-015.md,fictional_sample
