@@ -1,6 +1,6 @@
 import streamlit as st
 
-from rag import build_store, ask_rag
+from rag import build_in_memory_store, build_in_memory_store_with_chunking, build_chrome_store_with_chunking, sync_add_docs, ask_rag
 
 st.set_page_config(page_title="Internal Docs RAG", layout="wide")
 st.title("📄 Internal Knowledge Assistant")
@@ -8,13 +8,18 @@ st.title("📄 Internal Knowledge Assistant")
 # 1. Sidebar for document ingestion
 with st.sidebar:
     st.header("Knowledge Base")
-    button = st.button("Process Documents")
+    button = st.button("Load Vector DB")
     if button:
-        with st.spinner("Chunking and indexing documents..."):
-            store, total_docs, metadata = build_store()
-            st.session_state.store = store
-            st.session_state.vector_db_ready = True
-            st.success(f"Indexed {total_docs} files!")
+        with st.spinner("Loading vector DB"):
+            store = build_chrome_store_with_chunking()
+            if store:
+                st.session_state.store = store
+                st.session_state.vector_db_ready = True
+                sync_docs_btn = st.button("Sync Documents in VectorDB")
+                if sync_docs_btn:
+                    with st.spinner("Chunking and indexing documents..."):
+                        total_docs = sync_add_docs(st.session_state.store)
+                        st.success(f"Indexed {total_docs} files!")
     # uploaded_files = st.file_uploader(
     #     "Upload internal PDFs or TXT files",
     #     type=["pdf", "txt"],

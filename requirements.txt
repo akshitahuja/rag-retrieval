@@ -1,5 +1,7 @@
 streamlit
 langchain
+langchain-text-splitters
+langchain-chroma
 python-dotenv
 langchain-groq
 langchain-huggingface
